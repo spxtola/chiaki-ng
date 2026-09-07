@@ -182,6 +182,10 @@ jobs:
           cp "${env:VCPKG_INSTALLED_DIR}\${{ env.triplet }}\bin\miniupnpc.dll" chiaki-ng-Win -ErrorAction SilentlyContinue
           cp "${env:VCPKG_INSTALLED_DIR}\${{ env.triplet }}\bin\json-c.dll" chiaki-ng-Win -ErrorAction SilentlyContinue
           cp "${env:VCPKG_INSTALLED_DIR}\${{ env.triplet }}\bin\hidapi.dll" chiaki-ng-Win -ErrorAction SilentlyContinue
+          cp "${env:VCPKG_INSTALLED_DIR}\${{ env.triplet }}\bin\event_core.dll" chiaki-ng-Win -ErrorAction SilentlyContinue
+          cp "${env:VCPKG_INSTALLED_DIR}\${{ env.triplet }}\bin\event_extra.dll" chiaki-ng-Win -ErrorAction SilentlyContinue
+          cp "${env:VCPKG_INSTALLED_DIR}\${{ env.triplet }}\bin\event_pthreads.dll" chiaki-ng-Win -ErrorAction SilentlyContinue
+          cp "${env:VCPKG_INSTALLED_DIR}\${{ env.triplet }}\bin\event.dll" chiaki-ng-Win -ErrorAction SilentlyContinue
           cp "${{ github.workspace }}\${{ env.dep_folder }}\bin\swresample-*.dll" chiaki-ng-Win -ErrorAction SilentlyContinue
           cp "${{ github.workspace }}\${{ env.dep_folder }}\bin\avcodec-*.dll" chiaki-ng-Win -ErrorAction SilentlyContinue
           cp "${{ github.workspace }}\${{ env.dep_folder }}\bin\avutil-*.dll" chiaki-ng-Win -ErrorAction SilentlyContinue
