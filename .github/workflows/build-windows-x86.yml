@@ -113,8 +113,8 @@ jobs:
 
       - name: Fix CMake 4.x compatibility for older vcpkg ports
         run: |
-          echo "CMAKE_POLICY_VERSION_MINIMUM=3.5" | Out-File -FilePath $env:GITHUB_ENV -Encoding utf8 -Append
-
+          echo "VCPKG_OVERLAY_TRIPLETS=${{ github.workspace }}\custom-triplets" | Out-File -FilePath $env:GITHUB_ENV -Encoding utf8 -Append
+          
       - name: Setup vcpkg
         uses: lukka/run-vcpkg@v11
         with:
